@@ -2,6 +2,7 @@
   "name": "prueba_teral",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://cesaineam.github.io/prueba_teral",
   "dependencies": {
     "@craco/craco": "^6.4.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predploy": "npm run build",
+    "deplpoy":"gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
